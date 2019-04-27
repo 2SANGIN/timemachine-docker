@@ -1,0 +1,16 @@
+version: '3'
+services:
+  timemachine:
+    image: odarriba/timemachine
+    hostname: timemachine
+    container_name: timemachine
+    volumes:
+      - /mnt/media/docker/timemachine:/timemachine
+    ports: 
+      - 548:548
+      - 636:636
+    ulimits: 
+      nofile:
+        soft: 65536
+        hard: 65536
+    restart: unless-stopped
