@@ -2,7 +2,7 @@
 docker-compose.yml for [odarriba/docker-timemachine](https://github.com/odarriba/docker-timemachine)
 
 1. `vi docker-compose.yml` to modify volume
-2. Replace "<< host path >>" with the path where you want to actually place the backup file.
+2. Replace `<<host path>>` with the path where you want to actually place the backup file.
 ```
   services:
     ...
