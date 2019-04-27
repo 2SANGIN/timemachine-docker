@@ -5,7 +5,7 @@ services:
     hostname: timemachine
     container_name: timemachine
     volumes:
-      - /mnt/media/docker/timemachine:/timemachine
+      - <<host path>>:/timemachine
     ports: 
       - 548:548
       - 636:636
